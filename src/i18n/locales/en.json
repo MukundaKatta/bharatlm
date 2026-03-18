@@ -1,0 +1,127 @@
+{
+  "app": {
+    "name": "BharatLM",
+    "tagline": "Multilingual Indian Language AI Platform",
+    "description": "AI-powered tools for 13+ Indian languages — chat, translate, convert scripts, and more."
+  },
+  "nav": {
+    "home": "Home",
+    "chat": "Indic Chat",
+    "converter": "Script Converter",
+    "transliteration": "Transliteration",
+    "voice": "Voice Assistant",
+    "translation": "Document Translation",
+    "benchmark": "NLP Benchmarks",
+    "advisory": "Agri Advisory",
+    "education": "Education Tutor",
+    "healthcare": "Healthcare Info",
+    "api": "API & Usage"
+  },
+  "chat": {
+    "title": "Indic Language Chat",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "selectLanguage": "Select Language",
+    "newChat": "New Chat",
+    "clearChat": "Clear Chat",
+    "domain": "Domain"
+  },
+  "converter": {
+    "title": "Script Converter",
+    "description": "Convert text between Devanagari, Tamil, Telugu, Kannada, and other Indic scripts.",
+    "sourceScript": "Source Script",
+    "targetScript": "Target Script",
+    "inputPlaceholder": "Enter text in source script...",
+    "convert": "Convert",
+    "swap": "Swap Scripts",
+    "result": "Converted Text"
+  },
+  "transliteration": {
+    "title": "Transliteration Engine",
+    "description": "Type in English and auto-convert to any Indic script.",
+    "targetScript": "Target Script",
+    "inputPlaceholder": "Type in English (e.g., namaste)...",
+    "output": "Output",
+    "suggestions": "Suggestions"
+  },
+  "voice": {
+    "title": "Voice Assistant",
+    "description": "Speech-to-text and text-to-speech for all 13 Indian languages.",
+    "speak": "Speak",
+    "listen": "Listen",
+    "recording": "Recording...",
+    "processing": "Processing...",
+    "speed": "Speed",
+    "pitch": "Pitch",
+    "tts": "Text to Speech",
+    "stt": "Speech to Text"
+  },
+  "translation": {
+    "title": "Document Translation Workbench",
+    "description": "Translate government, legal, and official documents across Indian languages.",
+    "source": "Source Document",
+    "target": "Translated Document",
+    "domain": "Document Domain",
+    "translate": "Translate Document",
+    "domains": {
+      "general": "General",
+      "legal": "Legal / Judicial",
+      "medical": "Medical / Health",
+      "agricultural": "Agricultural",
+      "educational": "Educational"
+    }
+  },
+  "benchmark": {
+    "title": "Indic NLP Evaluation Benchmarks",
+    "description": "Performance metrics across tasks and languages for BharatLM models.",
+    "task": "NLP Task",
+    "language": "Language",
+    "score": "Score",
+    "model": "Model"
+  },
+  "advisory": {
+    "title": "Agricultural Advisory Chatbot",
+    "description": "Weather updates, crop advice, and market prices in your language.",
+    "weather": "Weather",
+    "crops": "Crop Advisory",
+    "market": "Market Prices",
+    "askQuestion": "Ask about farming..."
+  },
+  "education": {
+    "title": "Education Tutor",
+    "description": "Learn subjects in your regional language with AI-powered tutoring.",
+    "subject": "Subject",
+    "grade": "Grade Level",
+    "askQuestion": "Ask your question..."
+  },
+  "healthcare": {
+    "title": "Healthcare Information Assistant",
+    "description": "Reliable health information in your local language.",
+    "topic": "Health Topic",
+    "disclaimer": "This is for informational purposes only. Consult a doctor for medical advice.",
+    "askQuestion": "Ask about health..."
+  },
+  "api": {
+    "title": "API & Usage Dashboard",
+    "description": "Monitor API usage, per-language routing, and performance metrics.",
+    "endpoint": "Endpoint",
+    "usage": "Usage",
+    "latency": "Latency",
+    "tokens": "Tokens",
+    "apiKey": "API Key",
+    "docs": "API Documentation"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "download": "Download",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "language": "Language",
+    "selectLanguage": "Select Language"
+  }
+}

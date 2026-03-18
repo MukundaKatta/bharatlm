@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   BharatLM — Global Styles with Indic Typography Best Practices
+   ============================================================ */
+
+/* Import Google Fonts for Indic scripts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=Noto+Sans+Tamil:wght@300;400;500;600;700&family=Noto+Sans+Telugu:wght@300;400;500;600;700&family=Noto+Sans+Kannada:wght@300;400;500;600;700&family=Noto+Sans+Malayalam:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@300;400;500;600;700&family=Noto+Sans+Gujarati:wght@300;400;500;600;700&family=Noto+Sans+Gurmukhi:wght@300;400;500;600;700&family=Noto+Sans+Oriya:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --font-noto-sans: 'Noto Sans', system-ui, sans-serif;
+    --font-noto-devanagari: 'Noto Sans Devanagari', 'Noto Sans', sans-serif;
+    --font-noto-tamil: 'Noto Sans Tamil', 'Noto Sans', sans-serif;
+    --font-noto-telugu: 'Noto Sans Telugu', 'Noto Sans', sans-serif;
+    --font-noto-kannada: 'Noto Sans Kannada', 'Noto Sans', sans-serif;
+    --font-noto-malayalam: 'Noto Sans Malayalam', 'Noto Sans', sans-serif;
+    --font-noto-bengali: 'Noto Sans Bengali', 'Noto Sans', sans-serif;
+    --font-noto-gujarati: 'Noto Sans Gujarati', 'Noto Sans', sans-serif;
+    --font-noto-gurmukhi: 'Noto Sans Gurmukhi', 'Noto Sans', sans-serif;
+    --font-noto-oriya: 'Noto Sans Oriya', 'Noto Sans', sans-serif;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900;
+    font-feature-settings: 'kern' 1, 'liga' 1;
+  }
+
+  /* Indic typography best practices:
+     - Increased line-height (1.6-1.8x) for complex script rendering
+     - Slightly larger base font size for readability of conjuncts
+     - Letter-spacing adjustments for dense scripts */
+
+  .font-devanagari {
+    font-family: var(--font-noto-devanagari);
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
+  .font-tamil {
+    font-family: var(--font-noto-tamil);
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
+  .font-telugu {
+    font-family: var(--font-noto-telugu);
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
+  .font-kannada {
+    font-family: var(--font-noto-kannada);
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
+  .font-malayalam {
+    font-family: var(--font-noto-malayalam);
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+  }
+
+  .font-bengali {
+    font-family: var(--font-noto-bengali);
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
+  .font-gujarati {
+    font-family: var(--font-noto-gujarati);
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
+  .font-gurmukhi {
+    font-family: var(--font-noto-gurmukhi);
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
+  .font-oriya {
+    font-family: var(--font-noto-oriya);
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+}
+
+@layer components {
+  /* Tricolor gradient accent */
+  .tricolor-gradient {
+    background: linear-gradient(135deg, #FF9933 0%, #FFFFFF 50%, #138808 100%);
+  }
+
+  .tricolor-border {
+    border-image: linear-gradient(to right, #FF9933, #FFFFFF, #138808) 1;
+  }
+
+  /* Chakra spinner */
+  .chakra-spin {
+    animation: chakra-spin 4s linear infinite;
+  }
+
+  @keyframes chakra-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  /* Scrollbar styling */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 3px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+  }
+
+  /* Glass morphism */
+  .glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Indic text utilities */
+  .indic-text {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
+  .indic-heading {
+    font-size: 1.625rem;
+    line-height: 1.5;
+    letter-spacing: 0.005em;
+    font-weight: 600;
+  }
+}
