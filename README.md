@@ -86,6 +86,3 @@ src/
 └── utils/                # Helper functions
 ```
 
-## License
-
-MIT
